@@ -1,7 +1,7 @@
 module Main where
 
-import System.Cmd
 import System.Directory
+import System.Process
 
 import Paths_const_math_ghc_plugin
 
