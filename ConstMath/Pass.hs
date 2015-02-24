@@ -146,7 +146,8 @@ mkUnaryCollapseNum fnE opts expr@(App f1 (App f2 (Lit lit)))
             | otherwise = do
                 let sub = fnE (from d)
                 msgResult
-                return (App f2 (mkLit sub))
+                dflags <- getDynFlags
+                return (App f2 (mkLit dflags sub))
 mkUnaryCollapseNum _ _ expr = return expr
 
 mkBinaryCollapse :: (forall a. RealFloat a => (a -> a -> a))
