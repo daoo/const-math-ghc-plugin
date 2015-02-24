@@ -2,6 +2,7 @@
 {-# LANGUAGE PatternGuards #-}
 {-# LANGUAGE RankNTypes #-}
 {-# LANGUAGE TupleSections #-}
+{-# LANGUAGE ImpredicativeTypes #-}
 
 {-# OPTIONS_GHC -Wall #-}
 module ConstMath.Pass (
